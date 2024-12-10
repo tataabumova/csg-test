@@ -1,0 +1,115 @@
+.product-block {
+  @media (max-width: 767px) {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  &__products {
+    padding: 140px 0 165px;
+    @media (max-width: 767px) {
+      padding: 45px 0 30px;
+    }
+  }
+  &__item {
+    max-width: 400px;
+    width: 100%;
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    p {
+      line-height: 10px;
+      & + p {
+        font-size: 15px;
+      }
+      @media (max-width: 767px) {
+        font-size: 10px !important;
+        line-height: 12px;
+        margin-bottom: 5px;
+        max-width: 90px;
+        & + p {
+          margin-top: 0;
+        }
+      }
+    }
+    svg {
+      padding: 0 5px;
+    }
+  }
+
+  &--additional {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    height: 1080px;
+    background: $white;
+    z-index: 10;
+    position: relative;
+    margin-top: -3px;
+    @media (max-width: 1300px) {
+      display: block;
+      height: unset;
+      gap: unset;
+      margin-top: 0;
+    }
+    .left-column {
+      height: 100%;
+      width: 810px;
+      max-width: 100%;
+      background-position: center left 23%;
+      @media (max-width: 1300px) {
+        width: 100%;
+        height: 400px;
+        background-size: 100%;
+        background-position: center;
+      }
+      @media (max-width: 767px) {
+        height: 130vw;
+        background-size: 120%;
+        background-position: center;
+      }
+    }
+    .product-block {
+      &__products {
+        padding: 0;
+        margin: 50px auto 0;
+        @media (max-width: 1300px) {
+          margin: 43px auto 0;
+        }
+      }
+    }
+  }
+}
+.favorite-input {
+  opacity: 0;
+  &:checked {
+    & + .favorite {
+      svg path {
+        stroke: #ff9600;
+      }
+    }
+  }
+}
+.favorite {
+  cursor: pointer;
+  @media (max-width: 767px) {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  @media (hover: hover) {
+    &:hover {
+      svg path {
+        stroke: #ff9600;
+      }
+    }
+  }
+}

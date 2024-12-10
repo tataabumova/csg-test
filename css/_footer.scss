@@ -1,0 +1,199 @@
+.footer {
+  background-color: $black;
+  color: #fff;
+  @media (max-width: 1300px) {
+    margin-top: 40px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 234px 84px 52px;
+    box-sizing: border-box;
+    @media (max-width: 767px) {
+      padding: 0 25px 85px;
+    }
+  }
+
+  h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    @media (max-width: 767px) {
+      font-size: 10px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 210px;
+    padding: 0 220px 0 183px;
+    gap: 150px;
+
+    @media (max-width: 1650px) {
+      padding: 0;
+    }
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 45px;
+      padding: 0;
+    }
+
+    .subscription {
+      @media (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .subscribe-button {
+        width: 316px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        @media (max-width: 767px) {
+          height: 20px;
+          width: 243px;
+          width: calc(100% - 28px);
+        }
+      }
+    }
+
+    .footer-nav {
+      width: 100%;
+      max-width: 752px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 25px;
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3px;
+      }
+    }
+    .footer-section {
+      @media (min-width: 768px) {
+        &:first-child {
+          margin-right: 40px;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        @media (max-width: 767px) {
+          text-align: center;
+        }
+        li {
+          line-height: 125%;
+          a {
+            text-decoration: none;
+            @media (max-width: 767px) {
+              font-size: 10px;
+            }
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .social-btns {
+        margin-top: 33px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        @media (max-width: 767px) {
+          gap: 10px;
+          justify-content: center;
+          margin-top: 13px;
+          svg {
+            height: 8px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .rights {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      @media (max-width: 767px) {
+        gap: 6px;
+      }
+      p {
+        font-size: 17px;
+        text-transform: uppercase;
+        margin: 0;
+        @media (max-width: 767px) {
+          font-size: 10px;
+        }
+      }
+      .rights-right {
+        p {
+          font-size: 14px;
+          @media (max-width: 767px) {
+            font-size: 10px;
+          }
+        }
+        span {
+          font-size: 10px;
+          color: #777575;
+        }
+      }
+    }
+
+    .logo {
+      margin: 0 115px -25px 0;
+      @media (max-width: 767px) {
+        width: 69px;
+        height: auto;
+        margin: 0;
+        svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .scroll-to-top {
+      cursor: pointer;
+      @media (max-width: 767px) {
+        position: absolute;
+        padding: 20px;
+        bottom: 70px;
+        right: 16px;
+        svg {
+          width: 6px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
